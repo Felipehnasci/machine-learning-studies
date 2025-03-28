@@ -2,14 +2,14 @@ LIBERY IMPORT / IMPORTAR BIBLIOTECAS
 --------------
   EN
 
-On therminal execute: pip install tensorflow pandas numpy streamlit
+On therminal execute: *pip install tensorflow pandas numpy streamlit*
 
 I recommend create an virtual enviroment before you do this.
 If you have any issue on installing tensorflow, try use python 3.9, thats the version of python i used.
 
   PT-BR
 
-No terminal execute: pip install tensorflow pandas numpy streamlit
+No terminal execute: *pip install tensorflow pandas numpy streamlit*
 
 Eu recomendo criar um ambiente virtual antes.
 Se você esta tendo algum problema para instalar o tensorflow, tente usar o python na versão 3.9, foi a versão que utilizei.
