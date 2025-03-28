@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 # Carrega o modelo gerado pelo model-training.py
-model = tf.keras.models.load_model('modelo_celsius_para_fahrenheit.h5')
+model = tf.keras.models.load_model('model_celsius_to_fahrenheit.h5')
 
 # Titulo e input gerados pelo streamlit para melhor interação.
 st.title('Conversor de Celsius para Fahrenheit.')
