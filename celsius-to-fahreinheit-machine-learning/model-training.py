@@ -21,6 +21,6 @@ model.compile(optimizer=tf.keras.optimizers.Adam(0.5), loss='mean_squared_error'
 model.fit(x_train, y_train, epochs=300, verbose=1)
 
 # Salvar o modelo treinado
-model.save('modelo_celsius_para_fahrenheit.h5')
+model.save('model_celsius_to_fahrenheit.h5')
 
 print("Modelo treinado e salvo com sucesso!")
