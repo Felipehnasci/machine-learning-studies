@@ -6,8 +6,8 @@ from sklearn.preprocessing import StandardScaler
 
 #CHANGE THE PATH TO YOUR FILES
 try:
-    model_path = r"D:\GITHUB\machine-learning-studies\Redes Neurais para Classificação\calassification-for-diabetes\model_diabetes.h5"
-    scaler_path = r"D:\GITHUB\machine-learning-studies\Redes Neurais para Classificação\calassification-for-diabetes\scaler_diabetes.joblib"
+    model_path = r"D:\GITHUB\machine-learning-studies\Redes Neurais para Classificação\classification-for-diabetes\model_diabetes.h5"
+    scaler_path = r"D:\GITHUB\machine-learning-studies\Redes Neurais para Classificação\classification-for-diabetes\scaler_diabetes.joblib"
     model = tf.keras.models.load_model(model_path)
     scaler = joblib.load(scaler_path)
     print("Scaler Mean:", scaler.mean_)

@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report # Importar para avaliação
 
-diabetes = pd.read_csv('D:\GITHUB\machine-learning-studies\Redes Neurais para Classificação\calassification-for-diabetes\diabetes.csv')
+diabetes = pd.read_csv('D:\GITHUB\machine-learning-studies\Redes Neurais para Classificação\classification-for-diabetes\diabetes.csv')
 print(diabetes.iloc[:, 8].value_counts(normalize=True))
 X = diabetes.iloc[:, 0:8].values
 y = diabetes.iloc[:, 8].values
@@ -22,7 +22,7 @@ X_train_scaled = sc.fit_transform(X_train)
 X_test_scaled = sc.transform(X_test)
 
 # 4. Salvar o scaler que foi AJUSTADO nos dados de treino
-scaler_filename = 'D:\GITHUB\machine-learning-studies\Redes Neurais para Classificação\calassification-for-diabetes\scaler_diabetes.joblib'
+scaler_filename = 'D:\GITHUB\machine-learning-studies\Redes Neurais para Classificação\classification-for-diabetes\scaler_diabetes.joblib'
 joblib.dump(sc, scaler_filename)
 print(f"Scaler (ajustado em X_train) salvo em {scaler_filename}")
 
